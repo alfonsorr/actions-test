@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          path: src
       
       - name: setup git user
         run: |
@@ -19,8 +21,8 @@ jobs:
         
       - name: Run commands
         run: |
-          ls -lh .
-          ls -lh ../docs
-          cp a.txt ../docs/*
+          ls -lh src
+          ls -lh docs
+          cp ./src/a.txt ./docs/*
           cd ../docs
           git add *

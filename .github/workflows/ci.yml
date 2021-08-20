@@ -20,5 +20,4 @@ jobs:
           git push
         env:
           GIT_USER: alfonsorr
-          DEPLOYMENT_BRANCH: master
           GIT_PASS: ${{ secrets.GITHUB_TOKEN }}

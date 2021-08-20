@@ -11,6 +11,5 @@ jobs:
         run: |
           git checkout --orphan ext-branch
           git rm -rf .
-          git add '*'
           git commit -a -m "Initial Commit"
           git push origin ext-branch

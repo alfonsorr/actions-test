@@ -15,6 +15,7 @@ jobs:
           git config user.name
           git config user.email
           echo "yepe" >> a.txt
+          git add a.txt
           git commit -m "other yepe"
           git push
         env:

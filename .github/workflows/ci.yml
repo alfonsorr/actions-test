@@ -19,5 +19,4 @@ jobs:
           git commit -m "other yepe"
           git push
         env:
-          GIT_USER: alfonsorr
           GIT_PASS: ${{ secrets.GITHUB_TOKEN }}

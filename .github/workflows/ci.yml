@@ -26,5 +26,6 @@ jobs:
           ls -lh docs
           cp ./src/a.txt ./docs/*
           cd docs
+          git add *
           git commit -a -m "yujuuu"
           git push

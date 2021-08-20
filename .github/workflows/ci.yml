@@ -6,15 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Run commands
+      
+      - name: create branch
         run: |
-          echo "hi"
-          git config --global user.name "gh-actions"
-          git config --global user.email "actions@github.com"
-          git remote show
-          git config user.name
-          git config user.email
-          echo "yepe" >> a.txt
-          git add a.txt
-          git commit -m "other yepe"
-          git push
+          git checkout --orphan ext-branch
+          git rm -rf .
+          git add *
+          git commit -a -m "Initial Commit"
+          git push origin ext-branch

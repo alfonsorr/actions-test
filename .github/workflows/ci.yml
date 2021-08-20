@@ -19,6 +19,8 @@ jobs:
         
       - name: Run commands
         run: |
-          cp a.txt ../docs/
+          ls -lh .
+          ls -lh ../docs
+          cp a.txt ../docs/*
           cd ../docs
           git add *

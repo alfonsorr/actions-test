@@ -12,4 +12,6 @@ jobs:
           git checkout --orphan ext-branch
           git rm -rf .
           git commit -a -m "Initial Commit"
+          git config --global user.name "gh-actions"
+          git config --global user.email "actions@github.com"
           git push origin ext-branch
